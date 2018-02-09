@@ -40,4 +40,3 @@
 <?php include('modal.php'); ?>
 <script src="custom.js"></script>
 </body>
-</html>

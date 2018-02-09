@@ -14,4 +14,3 @@
 <?php include('script.php'); ?>
 <?php include('modal.php'); ?>
 </body>
-</html>
