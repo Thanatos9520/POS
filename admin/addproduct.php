@@ -5,7 +5,11 @@
 	$category=$_POST['category'];
 	$price=$_POST['price'];
 	$supplier=$_POST['supplier'];
-	$description=$_POST['description'];
+	$description1=$_POST['description'];
+    $description = str_replace("\n", "<br>", $description1);
+	$tech1=$_POST['tech'];
+    $tech = str_replace("\n", "<br>", $tech1);
+
 	$qty=$_POST['qty'];
 	
 	$fileInfo = PATHINFO($_FILES["image"]["name"]);
@@ -29,7 +33,7 @@
 		}
 	}
 	
-	mysqli_query($conn,"insert into product (product_name,categoryid,product_price,product_qty,photo, supplierid, description) values ('$name','$category','$price','$qty','$location', '$supplier', '$description')");
+	mysqli_query($conn,"insert into product (product_name,categoryid,product_price,product_qty,photo, supplierid, description) values ('$name','$category','$price','$qty','$location', '$supplier', '$description','$tech')");
 	$pid=mysqli_insert_id($conn);
 	
 	mysqli_query($conn,"insert into inventory (userid, action, productid, quantity, inventory_date) values ('".$_SESSION['id']."', 'Add Product', '$pid', '$qty', NOW())");

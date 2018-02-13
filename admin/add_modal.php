@@ -57,6 +57,10 @@
                         <label for="exampleTextarea">Description</label>
                         <textarea class="form-control" id="description" name="description" rows="10"></textarea>
                         </div>
+                        <div class="form-group">
+                        <label for="exampleTextarea">Tech Specs</label>
+                        <textarea class="form-control" id="tech" name="tech" rows="10"></textarea>
+                        </div>
 						</div>
 				</div>
 				</div>
