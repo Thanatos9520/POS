@@ -52,7 +52,11 @@
 						<div class="form-group input-group">
                             <span style="width:120px;" class="input-group-addon">Photo:</span>
                             <input type="file" style="width:400px;" class="form-control" name="image">
-                        </div>            
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleTextarea">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="10"></textarea>
+                        </div>
 						</div>
 				</div>
 				</div>

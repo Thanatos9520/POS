@@ -1,19 +1,5 @@
 <?php include('header.php'); ?>
-<?php
-	session_start();
-	
-	if (isset($_SESSION['id'])){
-		$query=mysqli_query($conn,"select * from user where userid='".$_SESSION['id']."'");
-		$row=mysqli_fetch_array($query);
-		
-		if ($row['access']==1){
-			header('location:admin/');
-		}
-		else{
-			header('location:user/');
-		}
-	}
-?>
+
 <body>
 <div class="container">
 	<div id="login_form" class="well">
@@ -42,3 +28,4 @@
 </div>
 <?php include('script.php'); ?>
 </body>
+ 

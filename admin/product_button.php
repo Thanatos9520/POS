@@ -91,6 +91,12 @@
                             <span class="input-group-addon" style="width:120px;">Photo:</span>
                             <input type="file" style="width:400px;" class="form-control" name="image">
                         </div>
+                        <div style="height:20px;"></div>
+                        <div class="form-group">
+                        <label for="exampleTextarea">Description</label>
+                        <br>
+                        <textarea class="form-control" name="description" cols="70" rows="10"><?php echo $b['description'] ?>"</textarea>
+                        </div>
 						<div style="height:10px;"></div>
 				</div>
 				</div>
