@@ -95,12 +95,12 @@
                         <div class="form-group">
                         <label for="exampleTextarea">Description</label>
                         <br>
-                        <textarea class="form-control" name="description" cols="70" rows="10"><?php echo $b['description'] ?>"</textarea>
+                        <textarea class="form-control" name="description" cols="70" rows="10"><?php echo $b['description'] ?></textarea>
                         </div> 
                         <div class="form-group">
                         <label for="exampleTextarea">Tech Specs</label>
                         <br>
-                        <textarea class="form-control" name="tech" cols="70" rows="10"><?php echo $b['tech'] ?>"</textarea>
+                        <textarea class="form-control" name="tech" cols="70" rows="10"><?php echo $b['tech'] ?></textarea>
                         </div>
 						<div style="height:10px;"></div>
 				</div>

@@ -10,10 +10,8 @@
 	$category=$_POST['category'];
 	$supplier=$_POST['supplier'];
 	$price=$_POST['price'];
-	$description1=$_POST['description'];
-    $description = str_replace("\n", "<br>", $description1);
-	$tech1=$_POST['tech'];
-    $tech = str_replace("\n", "<br>", $tech1);
+	$description=$_POST['description'];
+	$tech=$_POST['tech'];
 	$qty=$_POST['qty'];
 	
 	$fileInfo = PATHINFO($_FILES["image"]["name"]);
